@@ -46,7 +46,8 @@ signupForm.addEventListener("submit", (e) => {
   userData.push({ firstname,lastname, email, password });
   localStorage.setItem("userInfo", JSON.stringify(userData));
 
-  window.location.href = 'http://127.0.0.1:5500/index.html'
+  // window.location.href = 'http://127.0.0.1:5500/index.html'
+  window.location.href = 'index.html'
   signupForm.reset();
 });
 
