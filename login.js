@@ -12,7 +12,7 @@ signinForm.addEventListener("submit", (e) => {
     function checkuser(){
       if (user) {
         alert("Login Succesfully");
-        window.location.href = 'http://127.0.0.1:5500/HTML/index.html'
+        window.location.href = 'http://127.0.0.1:5500/index.html'
         return
       } 
       if(email=="")

@@ -40,13 +40,13 @@ signupForm.addEventListener("submit", (e) => {
 
       return;  
     }
-   
+   alert("Account created..")
 
   const userData = JSON.parse(localStorage.getItem("userInfo")) || [];
   userData.push({ firstname,lastname, email, password });
   localStorage.setItem("userInfo", JSON.stringify(userData));
 
-  window.location.href = 'http://127.0.0.1:5500/HTML/index.html'
+  window.location.href = 'http://127.0.0.1:5500/index.html'
   signupForm.reset();
 });
 
