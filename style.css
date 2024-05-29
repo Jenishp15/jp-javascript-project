@@ -1,0 +1,683 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body::-webkit-scrollbar-track{
+	background-color: lightgrey;}
+body::-webkit-scrollbar{
+	width: 10px;
+	background-color: lightgrey;
+}
+body::-webkit-scrollbar-thumb{
+	background-color: grey;
+    border-radius: 10px;
+
+}
+
+.nevigation {
+    text-align: center;
+    padding: 10px;
+    background-color: #f3f2f5;
+    font-size: 14px;
+    z-index: 99;
+}
+
+.nevigation1 p {
+    margin: 0%;
+}
+
+.header-nav {
+    position: sticky;
+    z-index: 99;
+    top: 40px;
+    padding: 5px 30px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.first-nav {
+    border-bottom: 1px solid lightgray;
+}
+
+.header-nav .search-area {
+    align-self: center;
+}
+
+.header-nav .search-area i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.header-nav .search-area input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 7px;
+    font-size: 13px;
+    color: #1a1a1a;
+    font-weight: 500;
+    align-items: center;
+    width: 100%;
+}
+
+.header-nav .logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.header-nav .account {
+    align-self: center;
+}
+
+.header-nav .account i {
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.navbar-toggler i {
+    font-size: 30px;
+    color: black;
+}
+.search-area{
+    align-items: center;
+}
+#menu-icon{
+    font-size: 30px;
+}
+.navbar .collapse {
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.navbar .collapse ul li .nav-link,
+.navbar .collapse ul li .nav-link:hover {
+    color: #1a1a1a;
+    padding: 0px;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+.navbar .collapse ul li .red-link,
+.navbar .collapse ul li .red-link:hover {
+    color: red;
+}
+
+.navbar li .nav-link::after {
+    content: '';
+    background-color: currentColor;
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.3s;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: transparent;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.side-menu {
+    position: fixed;
+    z-index: 99;
+    width: 300px;
+    background-color: white;
+    padding: 15px 0px;
+    inset: 0 auto 0 -400px;
+    transition: 0.5s;
+}
+.active-menu{
+    inset: 0 auto 0 0;
+    transition: 0.5s;
+    z-index: 100;
+}
+.side-menu #close-menu{
+    margin-left: 45px;
+}
+.side-menu ul {
+    padding: 30px 40px;
+}
+.side-menu li {
+    padding: 20px 0px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+.side-menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.side-menu .account {
+    border-top: 1px solid lightgray;
+    font-size: 18px;
+    padding: 10px 40px;
+    color: black;
+    text-decoration:none;
+}
+.cartTab {
+    position: fixed;
+    z-index: 99;
+    width: 350px;
+    background-color: white;
+    padding: 20px 0px;
+    inset: 0 -400px 0 auto;
+    transition: 0.5s;
+    cursor: pointer;
+    border-left: 1px solid grey;
+    overflow-y: scroll;
+}
+.active-cart {
+    inset: 0 0 0 auto;
+    z-index: 100;
+}
+.cartTab .head {
+    padding: 10px 25px;
+    border-bottom: 1px solid light#1a1a1a;
+}
+.cartTab .info{
+    text-align: center;
+    margin-top: 50%;
+}
+.cartTab .info button a{
+    text-decoration: none;
+    color: white;
+}
+.cartTab .info button{
+    background-color: #1a1a1a;
+    border: none;
+    font-size: 13px;
+    padding: 5px;
+}
+.cartTab .cart-item{
+   padding: 20px;
+   display: flex;
+}
+.cartTab .cart-item .img img{
+    height: 100px;
+    border-radius: 5px;
+}
+.cartTab .cart-item .content{
+    padding: 0px 15px;
+    width: 100%;
+}
+.cartTab .cart-item .content p{
+    margin: 2px;
+}
+.cartTab .cart-item .content .head{
+    padding: 0px;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+}
+.cartTab .cart-item .content .quentity{
+    display: flex;
+    justify-content: space-between;
+}
+.cartTab .cart-item .content .quentity input{
+    width: 20%;
+    padding: 1px 5px;
+    outline: none;
+}
+.cartTab .cart-item .content .quentity .removebtn{
+    color:#1a1a1a;
+    font-size: 13px;
+}
+
+#cartTab::-webkit-scrollbar-track{
+	background-color: #F5F5F5;
+}
+#cartTab::-webkit-scrollbar{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+#cartTab::-webkit-scrollbar-thumb{
+	background-color: grey;
+	border: none;
+}
+
+
+.side-search{
+    position: fixed;
+    z-index: 100;
+    width: 370px;
+    background-color: white;
+    inset: 0 auto 0 -400px;
+    transition: 0.5s;
+    cursor: pointer;
+    overflow-y: scroll;
+    transition: 0.5s;
+}
+.active-search {
+    inset: 0 auto 0 0;
+    z-index: 100;
+    transition: 0.5s;
+}
+input::placeholder{
+    font-size: 14px;
+}
+.side-search .head{
+    padding: 20px 20px;
+    border-bottom: 1px solid lightgray;
+}
+.side-search .head input{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+.side-search .head .bi-x-lg {
+    margin: 0px 0px 0px 50px;
+}
+.side-search .content{
+    padding: 20px 30px;
+}
+.side-search .content ul{
+    padding: 0px;
+    list-style: none;
+}
+.side-search .content p a{    
+    color: black;
+    text-decoration: none;
+}
+.side-search .content p{    
+    padding-top: 35px;
+    margin-bottom: 10px;
+}
+.side-search .content ul li{
+    color: grey;
+    padding: 5px 0px;
+}
+.bi-bag {
+    margin: 0px 10px;
+    font-size: 20px
+}
+.bi-x-lg {
+    margin-left: 150px;
+    font-size: 20px
+}
+.main-content {
+    position: relative;
+    top: 40px;
+}
+.summer-banner img {
+    height: auto;
+    width: 100%;
+}
+.summer-collections,
+.textured-T-shirts,
+.embra-freedom{
+    text-align: center;
+    margin: 35px 0px;
+    padding: 0px 30px;
+}
+.tittle {
+    text-align: center;
+    margin: 35px 0px;
+}
+.tittle h1 {
+    font-size: 45px;
+}
+.tittle p,
+.summer-collections p a,
+.textured-T-shirts .t-shirt p a,
+.embra-freedom p a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 4px;
+}
+.swiper-slide img,
+.textured-T-shirts .t-shirt img,
+.embra-freedom img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: 5px;
+}
+.swiper-slide .size,
+.textured-T-shirts .t-shirt .size,
+.embra-freedom .size {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.swiper-slide,
+.textured-T-shirts .t-shirt,
+.embra-freedom{
+    justify-content: center;
+}
+
+.swiper-slide .size a,
+.textured-T-shirts .t-shirt .size a,
+.embra-freedom .size a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 2px 10px;
+    border: 1px solid rgb(160, 160, 160);
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.mySwiper button,
+.textured-T-shirts button,
+.embra-freedom  button{
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fotter {
+    padding: 50px 30px;
+    background-color: #f2f2f2
+}
+.fotter ul {
+    padding: 0px;
+    list-style: none;
+}
+.fotter h6{
+    color: black;
+    margin-bottom: 30px;
+}
+.fotter ul li,.fotter a,.fotter p{
+    color: rgb(81, 81, 81);
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.fotter input{
+    padding: 10px;
+    width: 90%;
+    border: 1px solid light#1a1a1a;
+    margin: 10px 0px;
+}
+.fotter .social{
+    margin-top: 35px;
+}
+.fotter .social a{
+    border: 1px solid gray;
+    padding: 8px 12px;
+    font-size: 20px;
+    color: black;
+    position: relative;
+    z-index: 99;
+    transition: 0.5s;
+}
+
+.form {
+    position: relative;
+    top: 40px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.form h1 {
+    margin-bottom: 20px;
+}
+.form p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.input-group {
+    margin: auto auto 15px ;
+}
+.input-group input::placeholder{
+    color: black;
+}
+.input-group input{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    color: black;
+}
+.signup-content,.signin-content{
+    text-align: center;
+    margin: auto;
+    max-width: 420px;
+}
+.signup-content button,.signin-content button{
+    background-color: black;
+    border: none;
+    outline: none;
+    padding: 15px 0px;
+    color: white;
+    width: 100%;
+    margin: 1.5rem  0rem;
+}
+.signup-content p,.signup-content p a,.signin-content p,.signin-content p a{
+    color: #1a1a1ab3;
+    margin-bottom: 2rem;
+    transition: 0.3s;
+}
+.signup-content p a:hover,.signin-content p a:hover{
+    color: black;
+}
+.sign-inslider img,.sign-iupslider img{
+    height: 50px;
+    width: 50px;
+}
+.swiper .swiper-slide{
+    flex-direction: column;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    color: black;
+}
+.swiper .swiper-slide h6{
+    font-size: 14px;
+    color: black;
+    margin: 1rem 0rem;
+}
+.swiper .swiper-slide p{
+    font-size: 13px;
+    color: #1a1a1a;
+}
+.main-T-shirts{
+    padding: 15px 30px;
+    margin-bottom: 70px;
+}
+.main-T-shirts .header{
+    padding: 15px 30px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+.main-T-shirts .header .intro{
+    position: absolute;
+    color: grey;
+    left: 0%;
+    font-size: 12px;
+}   
+.main-T-shirts .header h1{
+    margin: 50px 0px 40px;
+}
+.products .filter{
+    text-align: start;
+    cursor: pointer;
+}
+.products .filter h6{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.t-shirts a{
+    color: black;
+    text-decoration: none;
+}
+.t-shirts img{
+    height: auto;
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: 5px;
+}
+.t-shirts .size {
+    display: flex;
+    flex-wrap: wrap;
+}
+.t-shirts{
+    justify-content: center;
+    text-align: center;
+}
+.t-shirts .col-3 p{
+    font-size: 15px;
+}
+.t-shirts .size a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    padding: 0px 10px;
+    border: 1px solid rgb(160, 160, 160);
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+strike{
+    color: grey;
+}
+.t-shirts-product{
+    margin-top: 50px;
+}
+.summer-collections .swiper-slide p,.sweats .swiper-slide p{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 4px;
+}
+.tittle p,
+.sweats p a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 4px;
+}
+.swiper-slide .size {
+    display: flex;
+    flex-wrap: wrap;
+}
+.instagram{
+    padding: 0px 42px;
+    margin: 30px 0px;
+    align-items: center;
+}
+.instagram .image{
+    padding: 0px;
+    position: relative;
+}
+.instagram img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.instafeed-overlays{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    padding-top: 50%;
+}
+.instagram .image:hover .instafeed-overlays{
+    opacity: 1;
+}
+.description a{
+    text-decoration: none;
+    color: grey;
+}
+.description a{
+    padding: 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin: 5px 5px;
+}
+.main-size{
+    margin: 10px 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-quentity,
+.main-buttons{
+    margin: 10px 0px 20px;
+}
+.main-quentity .sub-quentity {
+    max-width: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+}
+.main-quentity input {
+    width: 50px;
+    text-align: center;
+    padding: 5px; 
+    margin: 0px 20px;
+    outline: none;
+    border: none;
+}
+.main-buttons button{
+    width: 100%;
+    background-color: lightgrey;
+    margin: 10px 0px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+.main-buttons .black-button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 10px 0px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+.social{
+    color: rgb(79, 78, 78);
+    cursor: pointer;
+}
+.social i{
+    margin: 0px 10px;
+}
+
+
+
