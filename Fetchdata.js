@@ -42,12 +42,31 @@ function card(img,title,price,xs,s,m,l,xl,xxl){
 let lowtohigh =document.getElementById("lowtohighbtn")
 let hightolow =document.getElementById("hightolowbtn")
 
+
 lowtohigh.addEventListener("click",()=>{
+    alert("data sorted")
     const short = productdata.sort((a,b)=> a.price-b.price )
     cardlist(short)
 })
 
 hightolow.addEventListener("click",()=>{
+    alert("data sorted")
+    const short = productdata.sort((a,b)=> b.price-a.price )
+    cardlist(short)
+})
+
+let midlowtohigh =document.getElementById("midlowtohighbtn")
+let midhightolow =document.getElementById("midhightolowbtn")
+
+
+midlowtohigh.addEventListener("click",()=>{
+    alert("data sorted")
+    const short = productdata.sort((a,b)=> a.price-b.price )
+    cardlist(short)
+})
+
+midhightolow.addEventListener("click",()=>{
+    alert("data sorted")
     const short = productdata.sort((a,b)=> b.price-a.price )
     cardlist(short)
 })
